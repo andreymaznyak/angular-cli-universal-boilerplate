@@ -8,12 +8,14 @@ import { enableProdMode } from '@angular/core';
 import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
-
+const compression = require('compression');
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
 // Express server
 const app = express();
+
+app.use(compression());
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
