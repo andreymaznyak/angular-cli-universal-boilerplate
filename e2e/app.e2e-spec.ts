@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('super-front App', () => {
+describe('angular-cli-universal App', () => {
   let page: AppPage;
 
   beforeEach(() => {

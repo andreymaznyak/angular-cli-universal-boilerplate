@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "super-front"
+    "name": "angular-cli-universal"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/browser",
       "assets": [
         "assets",
         "favicon.ico"
@@ -31,7 +31,7 @@
     {
       "platform": "server",
       "root": "src",
-      "outDir": "dist-server",
+      "outDir": "dist/server",
       "assets": [
         "assets",
         "favicon.ico"
